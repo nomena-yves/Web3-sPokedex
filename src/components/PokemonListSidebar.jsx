@@ -5,7 +5,7 @@ export default function PokemonListRight() {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [showPokemon, setShowPokemon] = useState(false);
 
-  const pokemonList = [
+  const [pokemonList, setPokemonList] = useState([
     { id: 1, name: ' Bulbasaur',image:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png' ,number: '001', type: 'FIRE', selected: false },
     { id: 2, name: 'Ivysaur',image:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png' ,number: '002', type: 'FIRE', selected: false },
     { id: 3, name: 'Venusaur',image:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png' ,number: '003', type: 'WATER/DARK', selected: false },
@@ -157,7 +157,7 @@ export default function PokemonListRight() {
     { id: 149, name: 'Dragonite', image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png', number: '149', type: 'WATER', selected: false },
     { id: 150, name: 'Mewtwo', image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png', number: '150', type: 'GRASS', selected: false },
     { id: 151, name: 'Mew', image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png', number: '151', type: 'FIRE', selected: false },
-];
+  ]);
 
   const handlePokemonClick = (pokemon) => {
     setSelectedPokemon(pokemon);
@@ -173,7 +173,7 @@ export default function PokemonListRight() {
               <h2 className="text-4xl font-bold text-white mb-4">
                 {selectedPokemon.number}
               </h2>
-              <img src={selectedPokemon.image} alt={selectedPokemon.name} className='h-32' />
+              <img src={selectedPokemon.image} alt={selectedPokemon.name} className='h-26 w-52' />
             </div>
             
           ) : (

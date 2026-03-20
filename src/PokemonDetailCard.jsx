@@ -1,5 +1,5 @@
 
-import PokemonListSidebar from "./PokemonListSidebar.jsx";
+import PokemonListSidebar from "./components/PokemonListSidebar.jsx";
 
 export default function PokemonDetailCard() {
     return (
@@ -28,11 +28,7 @@ export default function PokemonDetailCard() {
 
                     <div className="flex flex-1 items-start justify-between">
                         <div className="h-[320px] w-[320px] flex items-center justify-center">
-                            <img
-                                src="/Image/Dawn.jpg"
-                                alt="Samurott"
-                                className="h-full w-full object-contain"
-                            />
+                          
                         </div>
 
                         <div className="flex flex-col gap-4 pr-4 items-end text-right">

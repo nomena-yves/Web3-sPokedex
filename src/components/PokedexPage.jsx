@@ -1,4 +1,4 @@
-import PokemonDetailCard from "./PokemonDetailCard.jsx";
+import PokemonDetailCard from "../PokemonDetailCard.jsx";
 import PokemonListSidebar from "./PokemonListSidebar.jsx";
 
 export default function PokedexPage() {
