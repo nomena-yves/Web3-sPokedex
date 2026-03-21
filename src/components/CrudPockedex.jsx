@@ -1,13 +1,11 @@
 import { useState } from 'react';
+import { list } from './PokemonListSidebar.jsx';
 
 export default function PokemonListRight() {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [showPokemon, setShowPokemon] = useState(false);
 
-  const [pokemonList, setPokemonList] = useState([
-    { id: 1, name: 'Bulbasaur', image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png', number: '001', type: 'FIRE', selected: false },
-    { id: 2, name: 'Ivysaur', image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png', number: '002', type: 'FIRE', selected: false },
-  ]);
+  const [pokemonList, setPokemonList] = useState(list);
 
   const [newPokemonName, setNewPokemonName] = useState("");
 
