@@ -54,7 +54,7 @@ export default function PokemonListRight() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent">
+    <div className="min-h-screen bg-transparent" style={{backgroundImage: "url('Image/pixelart sunset.gif')"}}>
 
       {/* 👁️ DETAILS */}
       <div className="lg:col-span-2">
